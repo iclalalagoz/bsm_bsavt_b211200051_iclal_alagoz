@@ -1,0 +1,11 @@
+[Unit]
+Description= find differences in a txt file
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/home/ubuntu/bsm/secondScript.sh
+
+[Install]
+WantedBy=multi-user.target
